@@ -1,0 +1,10 @@
+<mvc:View controllerName="Walkthrough.controller.HelloPanel" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc">
+	<Panel headerText="{i18n&gt;helloPanelTitle}" class="sapUiResponsiveMargin" width="auto">
+		<content>
+			<Button press=".onShowHello" text="{i18n&gt;showHelloButtonText}" class="myCustomButton"></Button>
+			<Input value="{/recipient/name}" valueLiveUpdate="true" width="60%"></Input>
+			<FormattedText htmlText="Hello {/recipient/name}" class="sapUiSmallMargin sapThemHiglight-asColor myCustomText"></FormattedText>
+			<Button id="helloDialogButton"
+				text="{i18n&gt;openDialogButtonText}" press=".onOpenDialog"
+				class="sapUiSmallMarginEnd" icon="sap-icon://world">
+			</Button></content></Panel></mvc:View>
