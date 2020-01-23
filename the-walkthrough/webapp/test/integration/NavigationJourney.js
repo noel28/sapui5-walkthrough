@@ -25,8 +25,7 @@ sap.ui.define([
 		When.onTheAppPage.iPressTheSayHelloWithDialogButton();
 		
 		// Assertions
-		Then.OnTheAppPage.iShouldSeeTheHelloDialog();
-//		Then.OnTheAppPage.iSawTheHelloDialog();
+		Then.onTheAppPage.iShouldSeeTheHelloDialog();
 		
 		// Cleanup
 		Then.iTeardownMyApp();
