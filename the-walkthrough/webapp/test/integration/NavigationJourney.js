@@ -16,7 +16,7 @@ sap.ui.define([
 		// Arrangements
 		Given.iStartMyUIComponent({
 			componentConfig: {
-				name: "../../"
+				name: "Walkthrough"
 			}
 		});
 		
