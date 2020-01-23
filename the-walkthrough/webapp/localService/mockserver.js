@@ -1,7 +1,7 @@
 sap.ui.define([
 	"sap/ui/core/util/MockServer",
 	"sap/base/util/UriParameters"
-], function(Mockserver,  UriParameters) {
+], function(MockServer,  UriParameters) {
 	"user strict";
 	
 	return {
@@ -14,7 +14,7 @@ sap.ui.define([
 			var oUriParameters = new UriParameters(window.location.href);
 			
 			// configure mock server with a delay
-			MockServer.config({
+			oMockServer.config({
 				autoRespond: true,
 				autoRespondAfter: oUriParameters.get("serverDelay") || 500
 			});
