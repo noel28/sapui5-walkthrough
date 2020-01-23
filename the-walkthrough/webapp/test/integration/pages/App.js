@@ -22,7 +22,7 @@ sap.ui.define([
 			assertions:	{
 				iShouldSeeTheHelloDialog: function() {
 					return this.waitFor({
-						controllType: "sap.m.dialog",
+						controlType: "sap.m.dialog",
 						success: function() {
 							// we set the view busy, so we need to query the parent of the app
 							Opa5.assert.ok(true, "The dialog is open");
