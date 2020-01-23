@@ -1,7 +1,7 @@
 sap.ui.define([
 	"sap/ui/core/util/MockServer",
 	"sap/base/util/UriParameters"
-], function(Mockserver,  UriParameters) {
+], function(MockServer,  UriParameters) {
 	"user strict";
 	
 	return {
@@ -11,7 +11,7 @@ sap.ui.define([
 				rootUri: "https://services.odata.org/V2/Northwind/Northwind.svc"
 			});
 			
-			var oUriParameters = new UriParameters(window.location.href);
+			var oUriParameters = new UriParameters(window.location.search);
 			
 			// configure mock server with a delay
 			MockServer.config({
