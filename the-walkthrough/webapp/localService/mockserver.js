@@ -1,7 +1,7 @@
 sap.ui.define([
 	"sap/ui/core/util/MockServer",
 	"sap/base/util/UriParameters"
-], function(Mockserver,  UriParameters) {
+], function(MockServer,  UriParameters) {
 	"user strict";
 	
 	return {
