@@ -20,7 +20,7 @@ sap.ui.define([
 			},
 			
 			assertions:	{
-				iShouldSeeTheHelloDialog:	function() {
+				iShouldSeeTheHelloDialog: function() {
 					return this.waitFor({
 						controllType: "sap.m.dialog",
 						success: function() {
