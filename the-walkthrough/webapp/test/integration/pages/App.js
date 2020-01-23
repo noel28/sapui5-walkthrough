@@ -18,18 +18,17 @@ sap.ui.define([
 						});
 					}
 				},
-			
 				assertions:	{
 					iShouldSeeTheHelloDialog: function() {
-//						return this.waitFor({
-//	//						controlType: "sap.m.Dialog",
-//	//						success: function() {
-//	//							// we set the view busy, so we need to query the parent of the app
-//	//							Opa5.assert.ok(true, "The dialog is open");
-//	//						},
-//	//
-//	//						errorMessage: "Did not find teh dialog control"
-//						});
+						return this.waitFor({
+							controlType: "sap.m.Dialog",
+							success: function() {
+								// we set the view busy, so we need to query the parent of the app
+								Opa5.assert.ok(true, "The dialog is open");
+							},
+	
+							errorMessage: "Did not find teh dialog control"
+						});
 					}
 				}
 			}

@@ -16,7 +16,7 @@ sap.ui.define([
 		// Arrangements
 		Given.iStartMyUIComponent({
 			componentConfig: {
-				name: "Walkthrough"
+				name: "../../"
 			}
 		});
 		
@@ -25,6 +25,7 @@ sap.ui.define([
 		
 		// Assertions
 		Then.OnTheAppPage.iShouldSeeTheHelloDialog();
+//		Then.OnTheAppPage.iSawTheHelloDialog();
 		
 		// Cleanup
 		Then.iTeardownMyApp();
