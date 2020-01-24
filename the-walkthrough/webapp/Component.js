@@ -27,15 +27,11 @@ sap.ui.define([
 	         var oModel = new JSONModel(oData);
 	         this.setModel(oModel);
 	
-	         // set i18n model
-	         /*var i18nModel = new ResourceModel({
-	            bundleName : "Walkthrough.i18n.i18n"
-	         });
-	         this.setModel(i18nModel, "i18n");*/
-	         // transferred to Manifest.JSON descriptor file
-	         
 	         // set dialog
 	         this._helloDialog = new HelloDialog(this.getRootControl());
+	         
+	         // create the views based on the url/hash
+	         this.getRouter().initialize();
 	      },
 	      
 	      
