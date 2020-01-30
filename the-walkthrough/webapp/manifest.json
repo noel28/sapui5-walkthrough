@@ -52,8 +52,8 @@
 				}
 			},
 			"invoice": {
-				"dataSource": "Invoices.json",
-				"type": "json"
+				"type": "sap.ui.model.json.JSONModel",
+				"uri": "Invoices.json"
 			}
 		},
 		"resources": {
