@@ -13,27 +13,20 @@ sap.ui.define([
 			
 			var oUriParameters = new UriParameters(window.location.href);
 			
-			// configure mock server with a delay
-//			MockServer.config({
-//				autoRespond: true,
-//				autoRespondAfter: oUriParameters.get("serverDelay") || 500
-//			});
-			
+//			// configure mock server with a delay
+////			MockServer.config({
+////				autoRespond: true,
+////				autoRespondAfter: oUriParameters.get("serverDelay") || 500
+////			});
+//			
 			// simulate
-//			var sPath = "../localService";
-//			oMockServer.simulate(sPath + "/metadata.xml", sPath + "/mockdata");
-			
-//			var sPath = jQuery.sap.getModuletPath("Walkthrough");
-			
-			oMockServer.simulate( "../localService/metadata.xml", {
-				sMockdataBaseUrl: "../localService/mockdata",
-				bGenerateMissingMockData: true
-			});
+			var sPath = "../localService";
+			oMockServer.simulate(sPath + "/metadata.xml", sPath + "/mockdata");
 			
 			// start
 			oMockServer.start();
 			
-			Log.info("Running the app with mock data");
+//			Log.info("Running the app with mock data");
 		}
 	}
 });
