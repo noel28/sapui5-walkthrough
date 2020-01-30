@@ -23,10 +23,10 @@ sap.ui.define([
 			/*var sPath = "../localService";
 			oMockServer.simulate(sPath + "/metadata.xml", sPath + "/mockdata");*/
 			
-			var sPath = jQuery.sap.getModuletPath("Walkthrough");
+//			var sPath = jQuery.sap.getModuletPath("Walkthrough");
 			
-			oMockServer.simulate( sPath + "/metadata.xml", {
-				sMockdataBaseUrl: sPath + "/mockdata",
+			oMockServer.simulate( "../localService/metadata.xml", {
+				sMockdataBaseUrl: "../localService/mockdata",
 				bGenerateMissingMockData: true
 			});
 			
