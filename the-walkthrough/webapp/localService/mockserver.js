@@ -14,14 +14,14 @@ sap.ui.define([
 			var oUriParameters = new UriParameters(window.location.href);
 			
 			// configure mock server with a delay
-			MockServer.config({
-				autoRespond: true,
-				autoRespondAfter: oUriParameters.get("serverDelay") || 500
-			});
+//			MockServer.config({
+//				autoRespond: true,
+//				autoRespondAfter: oUriParameters.get("serverDelay") || 500
+//			});
 			
 			// simulate
-			/*var sPath = "../localService";
-			oMockServer.simulate(sPath + "/metadata.xml", sPath + "/mockdata");*/
+//			var sPath = "../localService";
+//			oMockServer.simulate(sPath + "/metadata.xml", sPath + "/mockdata");
 			
 //			var sPath = jQuery.sap.getModuletPath("Walkthrough");
 			
