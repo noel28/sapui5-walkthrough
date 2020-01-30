@@ -8,7 +8,7 @@ sap.ui.define([
 		init: function() {
 			// create
 			var oMockServer = new MockServer({
-				rootUri: "https://services.odata.org/V2/Northwind/Northwind.svc/"
+				rootUri: "/"
 			});
 			
 			var oUriParameters = new UriParameters(window.location.href);
@@ -20,12 +20,20 @@ sap.ui.define([
 			});
 			
 			// simulate
-			var sPath = "../localService";
-			oMockServer.simulate(sPath + "/metadata.xml", sPath + "/mockdata");
+			/*var sPath = "../localService";
+			oMockServer.simulate(sPath + "/metadata.xml", sPath + "/mockdata");*/
+			
+			var sPath = jQuery.sap.getModuletPath("Walkthrough");
+			
+			oMockServer.simulate( sPath + "/metadata.xml", {
+				sMockdataBaseUrl: sPath + "/mockdata",
+				bGenerateMissingMockData: true
+			});
 			
 			// start
 			oMockServer.start();
 			
+			Log.info("Running the app with mock data");
 		}
 	}
 });

@@ -1,7 +1,7 @@
 sap.ui.define([
    "sap/ui/core/UIComponent",
    "sap/ui/model/json/JSONModel",
-   "./controller/HelloDialog"
+   "./controller/HelloDialog"   
    
 ], function (UIComponent, 
 			 JSONModel,
