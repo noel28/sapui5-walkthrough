@@ -12,11 +12,10 @@
 		"ach": "CA-UI5-DOC",
 		"dataSources": {
 			"invoiceRemote": {
-				"uri": "/",
+				"uri": "https://services.odata.org/V2/Northwind/Northwind.svc",
 				"type": "OData",
 				"settings": {
-					"odataVersion": "2.0",
-					"localUri": "../localService/metadata.xml"
+					"odataVersion": "2.0"
 				}
 			}
 		}
@@ -52,8 +51,8 @@
 				}
 			},
 			"invoice": {
-				"type": "sap.ui.model.json.JSONModel",
-				"uri": "Invoices.json"
+			 	"type": "sap.ui.model.json.JSONModel",
+			 	"uri": "Invoices.json"
 			}
 		},
 		"resources": {
@@ -62,38 +61,6 @@
 					"uri": "css/style.css"
 				}
 			]
-		},
-		"routing": {
-			"config": {
-				"routerClass": "sap.m.routing.Router",
-				"viewType": "XML",
-				"viewPath": "Walkthrough.view",
-				"controlId": "app",
-				"controlAggregation": "pages",
-				"async": true
-			},
-			"routes": [
-				{
-					"pattern": "",
-					"name": "overview",
-					"target": "overview"
-				},
-				{
-					"pattern": "detail/{invoicePath}",
-					"name": "detail",
-					"target": "detail"
-				}
-			],
-			"targets": {
-				"overview": {
-					"viewId": "overview",
-					"viewName": "Overview"
-				},
-				"detail": {
-					"viewId": "detail",
-					"viewName": "Detail"
-				}
-			}
 		}
 	}
 }
